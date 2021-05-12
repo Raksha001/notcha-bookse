@@ -10,9 +10,9 @@ export default function Notes(props) {
   } else {
     return (
       <>
-        <h4>
-          <Button className="font-weight-bold">Notes</Button>
-        </h4>
+        <h3>
+          <Button className="font-weight-bold ml-2">Notes</Button>
+        </h3>
 
         <div className="container mt-4">
           <div className="card-columns">
