@@ -64,6 +64,7 @@ export default function CreateNote() {
             variant="outlined"
             rows={4}
             className="shadow-sm"
+            color="secondary"
             fullWidth
             multiline
             onChange={handleChange} //if the value chngs it triggers handle chng
@@ -71,7 +72,7 @@ export default function CreateNote() {
           />
           <Button
             variant="contained"
-            color="primary"
+            color="secondary"
             className="d-flex ml-auto mt-3 text-capitalize font-weight-bold"
             onClick={handleSubmitClick}
           >

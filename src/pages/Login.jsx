@@ -5,6 +5,7 @@ import firebase from "firebase/app";
 import "firebase/auth";
 import CitySvg from "./components/CitySvg";
 import { motion } from "framer-motion";
+import AnimatedCursor from "react-animated-cursor";
 
 const easing = [0.6, -0.05, 0.01, 0.99];
 const fade = {
@@ -43,6 +44,14 @@ export default function Login() {
   }
   return (
     <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
+      <AnimatedCursor
+        innerSize={8}
+        outerSize={6}
+        color="254, 0, 119"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+      />
       <motion.div variants={fade}>
         <div
           className="container d-flex align-items-center justify-content-center flex-column"
@@ -53,9 +62,10 @@ export default function Login() {
         </div>
         <div className="container d-flex align-items-center justify-content-center flex-column">
           <h2 className="mb-4">Notcha Bookse</h2>
+
           <Button
             variant="contained"
-            color="primary"
+            color="secondary"
             style={{ textTransform: "capitalize" }}
             onClick={signInWithGoogle}
           >

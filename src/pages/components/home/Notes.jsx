@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
 import Tilt from "react-parallax-tilt";
+import Button from "@material-ui/core/Button";
 
 export default function Notes(props) {
   const { notes } = props;
@@ -9,23 +10,24 @@ export default function Notes(props) {
   } else {
     return (
       <>
-        <h4 className="container">Notes</h4>
-          <div className="container mt-4">
-           
-            <div className="card-columns">
-              {notes.map((note) => {
-                return (
-                  <Tilt>
+        <h4>
+          <Button className="font-weight-bold">Notes</Button>
+        </h4>
+
+        <div className="container mt-4">
+          <div className="card-columns">
+            {notes.map((note) => {
+              return (
+                <Tilt>
                   <Card key={note.id} className="card p-3">
                     <h6 className="m-0">{note.note}</h6>
                   </Card>
-                  </Tilt>
-                );
-              })}
-            </div>
+                </Tilt>
+              );
+            })}
           </div>
+        </div>
       </>
     );
   }
 }
-
