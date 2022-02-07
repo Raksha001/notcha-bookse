@@ -6,12 +6,12 @@ import "firebase/firebase-firestore";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCipoBqN81q5fYpjGJwmmRZ71Xmx1hCE64",
-  authDomain: "notcha-bookse-8f064.firebaseapp.com",
-  projectId: "notcha-bookse-8f064",
-  storageBucket: "notcha-bookse-8f064.appspot.com",
-  messagingSenderId: "727381700257",
-  appId: "1:727381700257:web:bec1c484106077fa048ae0"
+  apiKey: "AIzaSyBJF7ER0e5HOyX8m6H6eJYjPaXQ9MiwekI",
+  authDomain: "note-book-47ff4.firebaseapp.com",
+  projectId: "note-book-47ff4",
+  storageBucket: "note-book-47ff4.appspot.com",
+  messagingSenderId: "226541262338",
+  appId: "1:226541262338:web:07f9c63372b4554c92b91b",
 };
 
 firebase.initializeApp(firebaseConfig); //func for config
